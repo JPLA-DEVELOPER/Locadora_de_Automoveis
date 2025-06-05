@@ -1,0 +1,79 @@
+<!-- metodo GET e SET são responsaveis por enviar os dados do formulávio para o bachend-->
+<!-- metodo GET: envia esses dados pela url, o POST não-->
+{{> header}}
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      {{> menuLateral}}
+    </div>
+    
+    <div class="col align-self-center mx-auto" style="background-color: #F5F8FF;">
+      <h2>Novo Automóvel</h2>
+      <br>
+      
+      <form action="/cadastro/veiculo" method="post">
+        <div class="container-fluid"> 
+          <div class="row">
+            <div class="col-6">
+              <div>
+                <label class="form-label">Marca:</label>
+                <input class="form-control" type="text" name="marca"  placeholder="Digite a marca">
+              </div>
+
+              <div>
+                <label class="form-label">Modelo:</label>
+                <input class="form-control" type="text" name="modelo" placeholder="Digite o modelo">
+              </div>
+
+              <div>
+                <label class="form-label">Ano:</label>
+                <input class="form-control" type="text" name="ano" placeholder="Digite o ano">
+              </div>
+
+              <div>
+                <label class="form-label">Cor:</label>
+                <input class="form-control" type="text" name="cor" placeholder="Digite a cor">
+              </div>
+              <br>
+            </div>
+
+            <div class="col-6">
+              <div>
+                <label class="form-label">Placa:</label>
+                <input class="form-control" type="text" name="placa" placeholder="Digite a placa">
+              </div>
+
+              <div>
+                <label class="form-label">Renavam:</label>
+                <input class="form-control" type="text" name="renavam" placeholder="Digite o renavam">
+              </div>
+
+              <div>
+                <label class="form-label">Valor Diária:</label>
+                <input class="form-control" type="text" name="valordiaria" placeholder="Digite o valor da diária">
+              </div>
+  
+            </div>
+
+            <div>
+              <button class="btn-salvar btn btn-primary"><i class="bi bi-file-earmark-check"></i> Salvar</button>
+              <a href="/view/veiculos"><button type="button" class="btn btn-secondary"><i class="bi bi-file-earmark-excel"></i> Cancelar</button></a>
+            </div>
+            <br>
+            <br>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col align-self-center mx-auto text-center">
+      <div class="text-center">
+        <img src="/veiculo.jpg" class="rounded" width="600" class="me-1">
+      </div>
+    </div>
+  </div>
+</div>
+
+

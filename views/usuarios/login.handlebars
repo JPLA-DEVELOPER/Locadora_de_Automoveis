@@ -1,0 +1,89 @@
+<body>
+  <div id="cabecalho" class="bg-primary">
+    <nav class="navbar">
+      <div class="container-fluid">
+        
+        <img src="/logo.png" class="rounded" width="580">
+
+        <form class="d-flex">
+          <a class="nav-link active me-2 text-light" aria-current="page" data-toggle="modal" data-target="#exampleModalCenter" href="#">Ajuda</a>
+          <a class="nav-link active me-2 text-light" aria-current="page" href="/cadastro/usuario">Criar conta</a>
+        </form>
+      </div>
+    </nav>
+  </div>  
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Ajuda</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <p>Olá!</p>
+          <p class="justificado">Se você tem alguma dúvida ou precisa de assistência, estamos aqui para ajudar. Por favor, entre em contato conosco através do e-mail: <strong>locadoradeautomoveis@suporte.com.br</strong>. Teremos o maior prazer em responder suas perguntas e fornecer o suporte necessário.</p>
+          <p>Obrigado pela preferência!</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container"> 
+    <div class="row">
+      <div class="col-1">
+
+      </div>
+
+      <div class="col align-self-center mx-auto">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+            <form  action="/loginpost" method="post">
+              <h1 class="text-center">Iniciar sessão</h1>
+              <p class="text-center text-primary">Faça o login no seu painel de administração.</p>
+              <br>
+      
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="loginName">E-mail *</label>
+                <input type="email" name="email" id="loginName" class="form-control" />
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <label class="form-label" for="loginPassword">Senha *</label>
+                <input type="password" name="senha" id="loginPassword" class="form-control" />
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block form-control">Entrar</button>
+              <br>
+              <br>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>Ainda não tem uma conta? <a href="/cadastro/usuario"><strong>Criar conta</strong></a></p>
+              </div>
+        
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col align-self-center mx-auto text-center">
+        <div class="text-center">
+          <img src="/login.jpg" class="rounded" width="577" class="me-1">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>

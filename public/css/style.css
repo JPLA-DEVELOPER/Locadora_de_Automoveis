@@ -1,0 +1,29 @@
+/*Animação feita no menu lateral*/
+.sidebar button 
+{
+    margin-left: -10px;
+    margin-right: -10px;
+    text-align: left;
+}
+.sidebar a 
+{
+    margin-left: 30px;
+}
+
+/*Diminuindo o tamanho do cabeçalho*/
+#cabecalho{
+    height: 50px;
+
+    .container-fluid{
+        margin-top: -10px;
+    }
+}
+
+/*Aumentando o tamanho do rodapé*/
+#rodape{
+    height: 30px;
+}
+
+.justificado {
+    text-align: justify;
+}  
