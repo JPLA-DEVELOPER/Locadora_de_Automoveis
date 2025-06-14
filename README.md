@@ -1,25 +1,29 @@
-#Sistema Locadora de Automóveis
-Sistema web simples para gestão de uma locadora de automóveis.
+# Sistema_Locadora_de_Automoveis
 
 
-⚙️ Funcionalidades
-  👤 Cadastro e edição de usuários;
-
-  🚙 Cadastro e edição de veículos;
-
-  🔄 Alocação e desalocação de veículos.
+Sistema web símples de uma locadora de autómóveis.
 
 
-🛠️ Tecnologias Utilizadas
-  -Node.js;
+#Funcionalidades: 
 
-  -Express.js;
+-Cadastro e edição de usuários;
 
-  -Sequelize (ORM);
+-Cadastro e edição de veículos;
 
-  -MySQL;
+-Alocação/desalocação de veículos;
 
-  -Bootstrap;
 
-  -Arquitetura MVC.
 
+#Tecnologias utilizadas:
+
+-Node.js;
+
+-Express.js;
+
+-Sequelize ORM;
+
+-MySQL;
+
+-Bootstrap;
+
+-Arquitetura MVC.
